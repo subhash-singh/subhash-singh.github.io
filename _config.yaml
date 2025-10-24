@@ -1,0 +1,64 @@
+# Site settings
+title: "Subhash Singh"
+description: "Professional Portfolio & Technical Blog"
+author: "Subhash Singh"
+email: your-email@example.com
+baseurl: "" # Leave empty for user pages (subhash-singh.github.io)
+url: "https://subhash-singh.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Jekyll plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Contact"
+    url: "/contact/"
+
+# Social links
+github_username: subhash-singh
+linkedin_username: your-linkedin
+twitter_username: your-twitter
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Subhash Singh"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
